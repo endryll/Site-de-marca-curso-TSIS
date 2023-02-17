@@ -10,12 +10,21 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-
-            justify-content: center;
-            align-items: center;
+            position: fixed;
+            flex-wrap: wrap;
+            top: 50px;
+            left: 150px;
 
         }
-        
+
+        .flex-container > div {
+            width: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
     </style>
 </head>
 
@@ -23,7 +32,11 @@
     <div class="flex-container">
         <img style="width: 150px;" src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-11.png"
             alt="logo-da-coca-cola">
+        <div>Produtos</div>
+        <div>História</div>
+        <div>Contatos</div>
     </div>
+
 </body>
 
 </html>
