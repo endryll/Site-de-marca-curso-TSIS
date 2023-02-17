@@ -9,20 +9,61 @@
     <style>
         .flex-container {
             display: flex;
-            flex-direction: row;
+            justify-content: center;
             position: fixed;
-            flex-wrap: wrap;
-            top: 50px;
-            left: 150px;
+            margin-left: 40px;
+            margin-top: 20px;
 
         }
 
-        .flex-container > div {
+        .flex-container>div {
             width: 100px;
-            margin: 30px;
+            margin: 37px;
             text-align: center;
-            line-height: 75px;
+            line-height: 70px;
             font-size: 30px;
+        }
+
+        .lançamentos {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 65px;
+            margin-bottom: 0px;
+        }
+
+        .flex-conteiner-lançamentos {
+            background-color: rgb(200, 164, 258);
+            padding: 80px;
+            margin: 0px;
+            display: flex;
+            border: solid;
+            border-width: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+
+
+        }
+
+        .text-lançamento {
+            background-color: rgb(200, 164, 320);
+            padding: 0px;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        .coca-image {
+            background-color: rgb(200, 164, 258);
+            flex-direction: row;
+            margin-left: 0px;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(200, 164, 258);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
     </style>
@@ -31,10 +72,30 @@
 <body>
     <div class="flex-container">
         <img style="width: 150px;" src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-11.png"
-            alt="logo-da-coca-cola">
-        <div>Produtos</div>
-        <div>História</div>
-        <div>Contatos</div>
+            alt="logo-da-coca-cola" height="130px">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="história.html">História</a></div>
+        <div><a href="produtos.html">Produtos</a></div>
+        <div><a href="contatos.html">Contatos</a></div>
+    </div>
+
+    <div class="lançamentos">
+        <h2>Lançamentos</h2>
+    </div>
+    
+    <div class="flex-conteiner-lançamentos">
+        <div class="coca-image">
+            <img style="margin: 30px;"
+                src="https://supernossoio.vtexassets.com/arquivos/ids/226572-1600-auto?v=637868322566200000&width=1600&height=auto&aspect=true"
+                alt="nova-lata-de-coca-cola-byte.edição-limitada" height="500px" width="550px">
+        </div>
+
+        <div class="text-lançamento">
+            <img src="https://brandemia.org/contenido/subidas/2022/04/2-1-1200x670.png" alt="" height="300px" width="600px">
+            <h2>Novo Coca-Cola Byte edição limitada, sabor novo e sem calorias.</h2>
+            <h2>“Assim como os pixels ativam a conexão digital, a Coca-Cola Byte permite às pessoas se unirem para compartilhar momentos em que A Magia Acontece”</h2>
+        </div>
+
     </div>
 
 </body>
